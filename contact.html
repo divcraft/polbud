@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt - PolBud Sławno</title>
+    <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+    <link rel="icon" href="img/icon.svg" type="image/png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <header class="wrapper">
+        <a href="index.html"><img id="logo" src="img/logo.svg"></a>
+        <nav>
+            <img id="menu-btn" src="img/menu.svg">
+            <ul id="nav-list" class="active">
+                <a href="about.html">
+                    <li class="nav-li">O nas</li>
+                </a>
+                <a href="products.html">
+                    <li class="nav-li">Asortyment</li>
+                </a>
+                <a href="delivery.html">
+                    <li class="nav-li">Dostawa</li>
+                </a>
+                <a href="credit.html">
+                    <li class="nav-li">Pożyczka</li>
+                </a>
+                <a href="discount.html">
+                    <li class="nav-li">Rabat</li>
+                </a>
+                <a href="contact.html">
+                    <li class="nav-li nav-list-active">Kontakt</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="titlehead wrapper">
+            <h1 class="title-all">Kontakt</h1>
+        </section>
+        <div id="contact-flex" class="wrapper">
+            <section id="contact-info">
+                <div class="info-box">
+                    <h1 id="contact-desc-1" class="contact-desc">Adres</h1>
+                    <p class="contact-txt">Dworcowa 7<br>6-100 Sławno</p>
+                </div>
+                <div class="info-box">
+                    <h1 id="contact-desc-2" class="contact-desc">Email</h1>
+                    <p class="contact-txt">biuro@polbud-slawno.pl</p>
+                </div>
+                <div class="info-box">
+                    <h1 id="contact-desc-3" class="contact-desc">Telefon</h1>
+                    <p class="contact-txt">+48 505 058 379</p>
+                </div>
+            </section>
+            <section id="contact-form">
+                <h1 id="index-form-h1" class="h1-red-24">Napisz do nas a my odpowiemy</h1>
+                <form method="post" onsubmit="return validateForm();" id="index-form-box">
+                    <input id="index-form-name" class="index-form-windows" type="text" placeholder="Imię">
+                    <div id="validate-name" class="validate-txt">*Wpisz imię</div>
+                    <input id="index-form-email" class="index-form-windows" type="text" placeholder="Adres email">
+                    <div id="validate-email" class="validate-txt">*Wpisz email</div>
+                    <textarea id="index-form-message" class="index-form-windows" placeholder="Jak możemy Ci pomóc?"></textarea>
+                    <div id="validate-message" class="validate-txt">*Wpisz wiadomość <div id="validate-message" class="validate-txt">*Wpisz wiadomość</div>
+                    </div>
+                    <input type="submit" value="Wyślij wiadomość" id="index-form-btn" class="white-btn">
+                </form>
+            </section>
+        </div>
+        <section id="contact-map">
+            <h1 id="map-h1" class="wrapper h1-red-24">Znajdź nas na mapie:</h1>
+            <div id="map-box" class="wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1913.2953050298058!2d16.662148315516625!3d54.35667798020311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fe210b9d980737%3A0xa4f7677fd4f68501!2sPolbud+Oskar+Mazur!5e1!3m2!1spl!2spl!4v1555507099881!5m2!1spl!2spl" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen> </iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p id="footer-p">Wyprodukowano przez<br>
+            <a href="#">www.div-craft.com</a></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="js/nav-dropdown.js"></script>
+    <script type="text/javascript" src="js/validation-form.js"></script>
+</body></html>
